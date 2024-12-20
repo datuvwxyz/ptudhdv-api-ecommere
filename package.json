@@ -1,0 +1,33 @@
+{
+  "name": "api-ecommere",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/datuvwxyz/ptudhdv-api-ecommere.git"
+  },
+  "keywords": [
+    "api"
+  ],
+  "author": "LaTanDat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/datuvwxyz/ptudhdv-api-ecommere/issues"
+  },
+  "homepage": "https://github.com/datuvwxyz/ptudhdv-api-ecommere#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.2",
+    "mongose": "^0.0.2-security",
+    "nodemon": "^3.1.9",
+    "route": "^0.2.5"
+  }
+}
