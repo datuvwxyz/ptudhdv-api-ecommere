@@ -6,16 +6,13 @@ class User {
         try {
             const { name, email, password, phone } = req.body;
             
-            // Check if email already exists
             const existingUser = await Users.findOne({ email });
             if (existingUser) {
                 return res.status(400).json({ message: 'Email already exists' });
             }
     
-            // Hash password
             const hashedPassword = await bcrypt.hash(password, 10);
-    
-            // Create user
+
             const user = new Users({
                 name,
                 email,

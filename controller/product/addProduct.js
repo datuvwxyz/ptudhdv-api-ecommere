@@ -5,7 +5,6 @@ class Product {
         try {
             const { name, description, price, stock, category, images } = req.body;
 
-          // Check if user exists
           const product = await Products.findOne({ name });
           if (product) {
               return res.status(404).json({ message: 'Product not found' });
